@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <header role="banner">
+        <h1>Subscribed-Milk Portal</h1>
+        <nav>
+            <ul>
+                <li><a href="#delivery-areas">Delivery Regions</a></li>
+                <li><a href="#delivery-packages">Delivery Packages</a></li>
+                <li><a href="#delivery-schedule">Delivery Schedule</a></li>
+                <li><a href="#media-section">Media</a></li>
+                <li><a href="#registration">Registration</a></li>
+            </ul>
+        </nav>
+        <p>We offer milk in several regions of Nairobi</p>
+    </header>
+
+    <main role="main">
+        <section id="delivery-areas" class="delivery-areas">
+            <h2>Delivery regions</h2>
+    <ol>
+        <li>Nairobi Central
+            <ul>
+                <li>CBD</li>
+                <li>Upper Hill</li>
+                <li>Ngara</li>
+                <li>Pangani</li>
+            </ul>
+        </li>
+        <li>Westlands
+            <ul>
+                <li>Parklands</li>
+                <li>Riverside</li>
+                <li>Lavington</li>
+                <li>Museum Hill</li>
+            </ul>
+        </li>
+        <li>Kilimani
+            <ul>
+                <li>Yaya</li>
+                <li>Wood Avenue</li>
+                <li>Adams Arcade</li>
+                <li>Hurlingham</li>
+            </ul>
+        </li>
+        <li>Lang'ata
+            <ul>
+                <li>Southlands</li>
+                <li>Nyayo Estate</li>
+                <li>Otiende</li>
+                <li>Wilson Airport Area</li>
+            </ul>
+        </li>
+        <li>Eastleigh
+            <ul>
+                <li>Section I</li>
+                <li>Section II</li>
+                <li>Section III</li>
+                <li>St. Teresa</li>
+            </ul>
+        </li>
+    </ol>
+</section>
+
+<section id="delivery-packages" class="delivery-packages">
+    <h2>Delivery Packages</h2>
+    <dl>
+        <dt>Basic Package</dt>
+        <dd>Includes delivery to your doorstep every Monday.</dd>
+
+        <dt>Standard Package</dt>
+        <dd>Includes delivery to your doorstep every Monday and Thursday.</dd>
+
+        <dt>Premium Package</dt>
+        <dd>Includes daily delivery to your doorstep.</dd>
+    </dl>
+</section>
+<section id="delivery-schedule" class="delivery-sschedule">
+    <h2>Delivery Schedule</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Delivery Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>8:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>8:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>8:00 AM - 10:00 AM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>8:00 AM - 10:00 AM</td>
+            </tr>
+        </tbody>
+</section>
+<section id="media-section" class="media-section">
+    <h2>Media</h2>
+    <img src="milk.png" alt="Milk Delivery" width="300" height="200">
+    <audio src="audio.mp3" controls>Chill music as you wait for your delivery</audio>
+    <video src="video.mp4" controls>Your browser does not support the video tag.</video>
+</section>
+
+        <section id="registration">
+            <h2>Registration Form</h2>
+            <form autocomplete="on">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your full name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="^\d{10}$" placeholder="07XXXXXXXX">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Delivery Information</legend>
+                    <label for="region">Select Your Region:</label>
+                    <select id="region" name="region" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="nairobi-central">Nairobi Central</option>
+                        <option value="westlands">Westlands</option>
+                        <option value="kilimani">Kilimani</option>
+                        <option value="langata">Lang'ata</option>
+                        <option value="eastleigh">Eastleigh</option>
+                    </select>
+
+                    <label for="package">Select Delivery Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="basic">Basic Package</option>
+                        <option value="standard">Standard Package</option>
+                        <option value="premium">Premium Package</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
